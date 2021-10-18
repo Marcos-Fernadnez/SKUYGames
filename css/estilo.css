@@ -388,6 +388,11 @@ div#img3 {
   .noticiaCont__cuerpo--titulo:hover {
     color: #d31c3e;
     cursor: pointer; }
+  .noticiaCont__cuerpo--link {
+    color: white;
+    text-decoration: none; }
+  .noticiaCont__cuerpo--link:hover {
+    color: #d31c3e; }
   .noticiaCont__cuerpo--fecha, .noticiaCont__cuerpo--logoFecha {
     display: inline-block; }
   .noticiaCont__cuerpo--fecha {

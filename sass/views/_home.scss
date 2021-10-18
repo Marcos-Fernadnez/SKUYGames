@@ -225,10 +225,17 @@ div#img3{
         &--titulo:hover{
             color: $color-hover;
             cursor: pointer;
-            }
+        }
+        &--link{
+            color: white;
+            text-decoration: none;
+        }
+        &--link:hover{
+            color: $color-hover;
+        }
         &--fecha, &--logoFecha{
             display: inline-block;
-            }
+        }
         &--fecha{
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
