@@ -1,0 +1,70 @@
+.redes{
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    &__fondo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        &--bg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__container{
+        width: 100%;
+        padding-left: 15px;
+        margin: 0 auto;
+        /*<------MQ-------->*/
+        @include desktop-xl{
+            max-width: 1170px;
+        }
+        /*<------MQ-------->*/
+    }
+    &__contenido{
+        width: 580px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &Row__divRedes{
+        color: white;
+        position: relative;
+    }
+    .divRedes__logo{
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @each $redes in gmail, facebook, instagram, youtube {
+            &--#{$redes} {
+                /*background-image: url("../../img/csgo.jpg");*/
+                position: absolute;
+            }
+        }
+        /*&--icono{
+            position: absolute;
+        }*/
+        &--icono{
+            padding-left: 0.7rem;
+            padding-top: 0.7rem;
+            width: 3rem;
+            height: 3rem;
+        }
+        &--follow{
+            display: block;
+            margin-top: 14px;
+            margin-bottom: 0;
+            line-height: 1.333333333333333;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+    &Row__divRedes img{
+        width: 34px;
+        height: 34px;
+    }
+}

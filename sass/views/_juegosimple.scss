@@ -1,0 +1,132 @@
+@import "../views/responsive";
+/*------------------------------------------------------------------------------------------------*/
+/*JUEGOSIMPLE.HTML*/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 500px;
+        opacity: 0.5;
+        @include tablet{
+            height: 300px;
+        }
+    }
+    .centrado{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        @include tablet{
+            left: 50%;
+        }
+        h1{
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 600;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 0.1em 0.1em 0.2em black;
+            animation-duration: 3s;
+            animation-name: aparecer;
+            @include tablet{
+                font-weight: 500;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.filajuego{
+    .videoJuego, .imgJuego{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgJuego{
+        img{
+            opacity: 0.7;
+            border-radius: 5px;
+            transform: skew(-2deg);
+            object-fit: cover;
+            /*<------MQ-------->*/
+            @include movil{
+                width: 100%;
+            }
+            @include tablet-desktop{
+                width: 100%;
+            }
+            @include desktop-xl{
+                height: 400px;
+                width: 100%;
+            }
+            /*<------MQ-------->*/
+        }
+    }
+    .videoJuego{
+        /*<------MQ-------->*/
+        @include movil{
+            margin-bottom: 1rem;
+        }
+        @include movil-tablet{
+            padding-bottom: 2rem;
+        }
+        @include tablet-desktop{
+            padding-bottom: 0rem;
+        }
+        /*<------MQ-------->*/
+        iframe{
+            opacity: 0.7;
+            border-radius: 5px;
+            transform: skew(-2deg);
+            object-fit: cover;
+            /*<------MQ-------->*/
+            @include movil{
+                width: 100%;
+            }
+            @include desktop-xl{
+                height: 400px;
+                width: 100%;
+            }
+            /*<------MQ-------->*/
+        }
+    }
+}
+.textoJuego{
+    p{
+        font-family: 'Noto Sans Display', sans-serif;
+        color: #b9b7c0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        margin: 1.5rem 0;
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 0rem; /**BOOTSTRAP*/
+        li{
+            list-style: none;
+            padding-left: 5px;
+            a{
+                color: white;
+                text-decoration: none;
+                /*<------MQ-------->*/
+                @include movil{
+                    font-size: 0.8rem;
+                }
+                /*<------MQ-------->*/
+            }
+        }
+    }
+    ol{
+        li{
+            list-style: disc;
+            color: #b9b7c0;
+        } 
+    }
+}
+/*JUEGOSIMPLE.HTML*/
+/*------------------------------------------------------------------------------------------------*/

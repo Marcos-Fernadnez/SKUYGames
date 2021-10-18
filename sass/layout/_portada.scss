@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------------------------------------*/
+/*PORTADA*/
+@keyframes aparecer{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.principalImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    background: rgb(18,17,24);
+    background: -moz-linear-gradient(180deg, rgba(18,17,24,1) 19%, rgba(31,4,9,1) 51%, rgba(18,17,24,1) 89%);
+    background: -webkit-linear-gradient(180deg, rgba(18,17,24,1) 19%, rgba(31,4,9,1) 51%, rgba(18,17,24,1) 89%);
+    background: linear-gradient(180deg, rgba(18,17,24,1) 19%, rgba(31,4,9,1) 51%, rgba(18,17,24,1) 89%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#121118",endColorstr="#121118",GradientType=1);
+    /*<------MQ-------->*/
+    @include movil{
+        height: 400px;
+        text-align: center;
+    }
+    /*<------MQ-------->*/
+    &__divTexto{ 
+        font-style: italic;
+        font-size: 5rem;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        /*<------MQ-------->*/
+        @include movil{
+            font-size: 2.5rem;
+        }
+        /*<------MQ-------->*/
+        &--animacion{
+            color: transparent;
+            -moz-text-stroke-width: 2px;
+            -webkit-text-stroke-width: 2px;
+            -moz-text-stroke-color: #000000;
+            -webkit-text-stroke-color: #ffffff;
+        }
+        &--animacion2{
+            text-shadow: 5px 5px #680606;
+        }
+    }
+}
+/*/PORTADA*/
+/*------------------------------------------------------------------------------------------------*/

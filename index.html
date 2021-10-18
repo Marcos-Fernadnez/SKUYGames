@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--SEO-->
+    <meta name="keywords" content="gaming, juego, esports, comunidad, egames, torneos, html, noticias">
+    <meta name="description" content="Todo sobre los eSport. Noticias de los eSport, Juegos e información. También encontraras un foro para comentar.">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <!--/BOOTSTRAP-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">  
+    <!--ICONO-->
+    <link rel="icon" type="image/png" href="img/esports.png">
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>SKUYGames | Inicio</title>
+</head>
+<body>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+        <div class="container-fluid navegacionDiv">
+            <div class="navegacionDiv__icono">
+                <a class="navegacionDiv__icono--opacity" href="index.html"><img src="img/controlador.svg" alt="icono nav" width="50" height="50"></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center navegacion__lista">
+              <li class="nav-item pe-lg-4 navegacion__lista--listas">
+                <a href="index.html"><img class="navegacion__lista--icono2" src="img/controlador.svg" alt="icono nav" width="50" height="50" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
+              </li>
+              <li class="nav-item pe-lg-4 navegacion__lista--listas">
+                <a class="nav-link active navegacion__lista--items" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item pe-lg-4 navegacion__lista--listas">
+                <a class="nav-link active navegacion__lista--items" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="./pages/noticia.html">Noticias</a>
+              </li>
+              <li class="nav-item pe-lg-4 navegacion__lista--listas">
+                <a class="nav-link active navegacion__lista--items" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="./pages/juegos.html">Juegos</a>
+              </li>
+              <li class="nav-item pe-lg-4 navegacion__lista--listas">
+                <a class="nav-link active navegacion__lista--items" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>   
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+  <section id="portada" class="section section__portada">
+    <img class="img-fluid section__portada--img" src="./img/torneologo2.jpg" alt="portada" width="100%">
+  </section>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+  <section class="section section__juegos" id="juegos">
+    <h1 class="section__juegos--titulo">Juegos</h1>
+    <div class="contJuego" id="containerJuego">
+      <div class="contJuego__divImg1" id="img1">
+        <img class="contJuego__divImg1--juego" src="img/csgo.jpg" alt="imagen del juego">
+        <div>
+          <span class="contJuego__divImg1--nombre">CS:GO</span>
+        </div>
+      </div>
+      <div class="contJuego__divImg2" id="img2">
+        <img class="contJuego__divImg1--juego" src="img/nba.jpg" alt="imagen del juego">
+        <div>
+          <span class="contJuego__divImg1--nombre">NBA</span>
+        </div>
+      </div>
+      <div class="contJuego__divImg3" id="img3">
+        <img class="contJuego__divImg1--juego" src="img/rl.jpg" alt="imagen del juego">
+        <div>
+          <span class="contJuego__divImg1--nombre">Rocket League</span>
+        </div>
+      </div>
+    </div>
+  </section>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+<section class="noticia">
+  <div class="noticia__contenedor">
+    <h2 class="noticia__contenedor--titulo">Noticias Destacadas</h2>
+    <div class="noticia__contenido">
+      <img class="noticia__contenido--foto" src="img/noticias/newcsgo.jpg" alt="Noticias destacada">
+        <div class="noticiaCont__cuerpo">
+          <h3 class="noticiaCont__cuerpo--titulo">Competitivas Pagas</h3>
+          <img class="noticiaCont__cuerpo--logoFecha" src="./img/noticias/calendar-mod.svg" alt="icono nombre juego" width="14" height="14"><p class="noticiaCont__cuerpo--fecha">15 Febrero 21</p>
+          <p class="noticiaCont__cuerpo--desc">La nueva actualización de CS:GO ha traído un cambio drástico para el modo ranked (competitivo), del que es uno de los esports más populares en todo el mundo.</p>
+          <a class="noticiaCont__cuerpo--enlace" href="./pages/noticiasimple.html">Ver más...</a>
+        </div>
+    </div>
+    <div class="noticia__contenido">
+      <img class="noticia__contenido--foto" src="img/noticias/newsnba.jpg" alt="Noticias destacada">
+        <div class="noticiaCont__cuerpo">
+          <h3 class="noticiaCont__cuerpo--titulo">La mejor versión de NBA</h3>
+          <img class="noticiaCont__cuerpo--logoFecha" src="./img/noticias/calendar-mod.svg" alt="icono nombre juego" width="14" height="14"><p class="noticiaCont__cuerpo--fecha">10 Octubre 20</p>
+          <p class="noticiaCont__cuerpo--desc">Desde 2K Games describen las mejoras de la versión de nueva generación de NBA 2K21, asegurando que es mucho más que una comparativa gráfica.</p>
+          <a class="noticiaCont__cuerpo--enlace" href="./pages/noticiasimple.html">Ver más...</a>
+        </div>
+    </div>
+    <div class="noticia__contenido">
+      <img class="noticia__contenido--foto" src="img/noticias/newsRL.jpg" alt="Noticias destacada">
+        <div class="noticiaCont__cuerpo">
+          <h3 class="noticiaCont__cuerpo--titulo">Temporada 4: Llegaron los TodoTerrenos</h3>
+          <img class="noticiaCont__cuerpo--logoFecha" src="./img/noticias/calendar-mod.svg" alt="icono nombre juego" width="14" height="14"><p class="noticiaCont__cuerpo--fecha">09 Agosto 21</p>
+          <p class="noticiaCont__cuerpo--desc">¡Alista tu montura para la temporada 4 de Rocket League! Reúne a tu pandilla y sal a las rutas polvorientas a partir del 11 de agosto.</p>
+          <a class="noticiaCont__cuerpo--enlace" href="./pages/noticiasimple.html">Ver más...</a>
+        </div>
+    </div>
+  </div>
+</section>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+  <section class="redes">
+    <div class="redes__fondo">
+      <img class="redes__fondo--bg" src="./img/img_sutil.jpg" alt="fondo redes sociales" width="400px" height="400px">
+    </div>
+    <div class="redes__container">
+      <div class="redes__contenido">
+        <div class="row">
+          <div class="redesRow__divRedes col-6 col-sm-3 mb-5">
+            <div class="divRedes__logo ">
+              <img class="divRedes__logo--gmail divRedes__logo--icono" src="./img/redes/gmail.svg" alt="Logo Gmail">
+            </div>
+            <span class="divRedes__logo--follow">Envános por <br>Gmail</span>
+          </div>
+          <div class="redesRow__divRedes col-6 col-sm-3 mb-5">
+            <div class="divRedes__logo">
+              <img class="divRedes__logo--facebook" src="./img/redes/facebook.svg" alt="Logo Facebook">
+            </div>
+            <span class="divRedes__logo--follow">Síguenos en <br> Facebook</span>
+          </div>
+          <div class="redesRow__divRedes col-6 col-sm-3">
+            <div class="divRedes__logo">
+              <img class="divRedes__logo--instagram" src="./img/redes/instagram.svg" alt="Logo Instagram">
+            </div>
+            <span class="divRedes__logo--follow">Síguenos en <br> Instagram</span>
+          </div>
+          <div class="redesRow__divRedes col-6 col-sm-3">
+            <div class="divRedes__logo">
+              <img class="divRedes__logo--youtube" src="./img/redes/youtube.svg" alt="Logo YouTube">
+            </div>
+            <span class="divRedes__logo--follow">Síguenos en <br> YouTube</span>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+<footer>
+  <p>SKUYGames &copy Todos los derecho reservados</p>
+</footer>
+<!---------------------------------------------------------------------------Separación de contenido------------------------------------------------------>
+    <!--/AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({once:true});
+    </script>
+    <!--JS-BOOSTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

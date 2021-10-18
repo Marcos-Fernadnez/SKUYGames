@@ -1,0 +1,45 @@
+@import "../utilities/variables";
+@import "../views/responsive";
+
+.navegacion{
+    min-height: 100px;
+    &__lista{
+        &--listas{
+            letter-spacing: .1rem;
+            padding-left: 0.5rem;
+            font-size: 1.4rem;
+            @include tablet{
+                font-size: 1rem;
+            }
+        }
+        &--items:hover{
+            border-bottom: 2px solid $color-hover;
+            font-size: 1.6rem;
+            /*<------MQ-------->*/
+            @include tablet{
+                font-size: 1.2rem;
+            }
+            /*<------MQ-------->*/
+        }
+        &--icono2{
+            opacity: 0;
+            /*<------MQ-------->*/
+            @include desktop{
+                opacity: 1;
+            }
+            /*<------MQ-------->*/
+        }
+    }
+}
+.navegacionDiv{
+    &__icono{
+        &--opacity{
+            opacity: 1;
+            /*<------MQ-------->*/
+            @include desktop{
+                opacity: 0;
+            }
+            /*<------MQ-------->*/
+        }
+    }
+}

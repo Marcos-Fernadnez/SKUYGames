@@ -1,0 +1,27 @@
+@import "./utilities/variables.scss";
+/*------------------------------------------------------------------------------------------------*/
+@import "./base/reset.scss";
+/*------------------------------------------------------------------------------------------------*/
+@import "./layout/navigation";
+
+@import "./layout/footer";
+
+@import "./layout/redes";
+
+@import "./layout/portada";
+/*------------------------------------------------------------------------------------------------*/
+@import "./views/home";
+
+@import "./views/contacto";
+
+@import "./views/noticia";
+
+@import "./views/noticiasimple";
+
+@import "./views/juegos";
+
+@import "./views/juegosimple";
+
+@import "./views/404";
+/*------------------------------------------------------------------------------------------------*/
+@import "./views/responsive";

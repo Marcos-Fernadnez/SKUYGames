@@ -1,0 +1,145 @@
+@import "../utilities/variables";
+@import "../views/responsive";
+.contacto{
+    width: 100%;
+    background-color: rgb(37, 36, 51);
+    padding: 100px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    /*<------MQ-------->*/
+    @include movil{
+        max-width: 350px;
+    }
+    @include movil-tablet{
+        max-width: 500px;
+    }
+    @include tablet-desktop{
+        max-width: 750px;
+    }
+    @include desktop{
+        max-width: 970px;
+    }
+    @include desktop-xl{
+        max-width: 1170px;
+    }
+    /*<------MQ-------->*/
+    &__sectionAcerca{
+        color:white;
+        word-wrap: break-word;
+        padding-left: 5px;
+        padding-right: 25px;
+        &--titulo{
+            font-weight: 600;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        &--texto{
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 2.2rem;
+        }
+    }
+    &__lista{
+        list-style: none;
+        padding-left: 0rem; /*BOOTSTRAP*/
+        display: flex;
+        flex-direction: column;
+        &--listas{
+            padding-bottom: 15px;
+            font-size: 1rem;
+        }
+        $redcontact:(
+            Gmail: 9px,
+            FB: 8px
+        );
+        @each $red, $margin in $redcontact {
+            &--#{$red} {
+                margin-right: $margin;
+            }
+        }
+        &--enlace{
+            color: white;
+            text-decoration: none;
+        }
+        &--enlace:hover{
+            color: $color-hover;
+        }
+    }
+}
+.formulario{
+    &__divInput{
+        /*<------MQ-------->*/
+        @include movil{
+            margin-bottom: 0.7rem;
+        }
+        @include movil-tablet{
+            margin-bottom: 0.7rem;
+        }
+        /*<------MQ-------->*/
+        &--input{
+            width: 100%;
+            border-radius: 5px;
+            transform: skew(-4deg);
+            padding: 10px 0;
+        }
+        &--input::placeholder{
+            color: rgb(128, 125, 125);
+            font-size: 1rem;
+            padding-left: 15px;
+        }
+        &--input:focus{
+            width: 330px;
+            height: 47px;
+            font-size: 1.2rem;
+        }
+        &--input, &--textarea{
+            background-color: #3a3747;
+            border: #3a3747;
+            color: white;
+        }
+        &--textarea{
+            margin-top: 0.7rem;
+            width: 100%;
+            border-radius: 5px;
+            padding: .75rem 1.25rem;
+        }
+        &--textarea::placeholder{
+            color: rgb(128, 125, 125);
+            font-size: 1rem;
+        }
+    }
+    &__divBtn{
+        text-align: left;
+        &--button{
+            width: 120px;
+            height: 50px;
+            background-color: $color-hover;
+            color: white;
+            border-radius: 5px;
+            border: $color-hover;
+            transform: skew(-4deg);
+            opacity: 0.7;
+            /*<------MQ-------->*/
+            @include movil{
+                width: 100%;
+            }
+            @include movil-tablet{
+                width: 100%;
+            }
+            @include tablet{
+                margin-top: .5rem;
+            }
+            @include tablet-desktop{
+                width: 120px;
+                height: 50px;
+            }
+            /*<------MQ-------->*/
+        }
+        &--button:hover{
+            cursor: pointer;
+            background-color: #ffffff;
+            border: #ffffff;
+            color: $color-hover;
+        }
+    }
+}

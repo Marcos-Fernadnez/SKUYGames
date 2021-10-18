@@ -1,0 +1,154 @@
+@import "../utilities/variables"; 
+@import "../views/responsive";
+/*------------------------------------------------------------------------------------------------*/
+/*NOTICIA.HTML*/
+.containerGeneral{
+    position: relative;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    background-color: #1f1d29;
+    .contNoticias{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        /*<------MQ-------->*/
+        @include movil{
+            max-width: 350px;
+        }
+        @include movil-tablet{
+            max-width: 500px;
+        }
+        @include tablet-desktop{
+            max-width: 750px;
+        }
+        @include desktop{
+            max-width: 970px;
+        }
+        @include desktop-xl{
+            max-width: 1170px;
+        }
+        /*<------MQ-------->*/
+    }
+}
+.noticiaV{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: #1f1d29;
+    .a{
+        margin-right: 30px;
+        /*<------MQ-------->*/
+        @include movil{
+            margin-right: 0px;
+            margin-bottom: 1rem;
+        }
+        @include tablet{
+            margin-right: 0px;
+        }
+        /*<------MQ-------->*/
+    }
+    img{
+        max-width: 230px;
+        border-radius: 5px;
+        /*<------MQ-------->*/
+        @include movil{
+            max-width: 100%;
+        }
+        @include tablet{
+            max-width: 100%;
+        }
+        /*<------MQ-------->*/
+    }
+    img:hover{
+        transform: scale(1.05,1.05);
+    }
+}
+.topNot{
+    margin-top: 60px;
+}
+.contenidoNot{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    .tituNot{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        @include tablet{
+            margin-top: 0.8rem;
+        }
+    }
+    .tituNot:hover{
+        color: $color-hover;
+    }
+    .logoFecha, .parrafo{
+        display: inline-block;
+    }
+    .logoFecha{
+        border-radius: 0;
+        margin-right: 0.5rem;
+    }
+    .parrafo{
+        margin-bottom: 5px;
+        color: #c0bec4;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+    p{
+        line-height: 1.4rem;
+        color: #a9a7af;
+        word-wrap: break-word;
+        /*<------MQ-------->*/
+        @include movil{
+            letter-spacing: 0.05rem;
+        }
+        /*<------MQ-------->*/
+    }
+    .descNot{
+        margin-top: 0.5rem;
+        /*<------MQ-------->*/
+        @include tablet-desktop{
+            margin-bottom: 0rem;
+            font-size: 0.8rem;
+        }
+        @include desktop{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        @include desktop-xl{
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        /*<------MQ-------->*/
+    }
+    .verMas{
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        text-decoration: none;
+        color: white;
+    }
+    .verMas:hover{
+        color: $color-hover;
+    }
+}
+.pagination{
+    .page-link{
+        color: white;
+        background-color: #1f1d29;
+        border: 0px;
+        font-weight: 600;
+    }
+    .page-item.active .page-link{
+        background-color: $color-hover;
+        border-color: $color-hover;
+        border-radius: 100%;
+    }
+}
+/*/NOTICIA.HTML*/
+/*------------------------------------------------------------------------------------------------*/

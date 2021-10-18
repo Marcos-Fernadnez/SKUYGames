@@ -1,0 +1,226 @@
+@import "../utilities/variables";
+@import "../views/responsive";
+/*------------------------------------------------------------------------------------------------*/
+/*NOTICIASIMPLE.HTML*/
+.contNotGeneral{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*<------MQ-------->*/
+    @include movil-tablet{
+        max-width: 550px;
+    }
+    @include tablet-desktop{
+        max-width: 750px;
+    }
+    @include desktop{
+        max-width: 970px;
+    }
+    @include desktop-xl{
+        max-width: 1170px;
+    }
+    /*<------MQ-------->*/
+}
+.breadcrumb-item + .breadcrumb-item::before{
+    content: var(--bs-breadcrumb-divider, "|"); /*BOOTSTRAP*/
+}
+.breadcrumb-item{
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: white;
+}
+.breadcrumb-item a:hover{
+    color: $color-hover;
+}
+.imgNoticia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    img{
+        opacity: 0.7;
+        border-radius: 5px;
+        transform: skew(-2deg);
+        object-fit: cover;
+        /*<------MQ-------->*/
+        @include movil{
+            height: 250px;
+            width: 100%;
+        }
+        /*<------MQ-------->*/
+    }
+}
+.textoNot{
+    p{
+        font-family: 'Noto Sans Display', sans-serif;
+        color: #b9b7c0;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+    }
+}
+.textoNot ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0rem; /**BOOTSTRAP*/
+}
+.textoNot{
+    .listaNot{
+        list-style: none;
+        color: white;
+        li{
+            font-size: 0.8rem;
+            font-weight: 400;
+            padding: 2px 4px 0;
+            a{
+                font-weight: 600;
+                text-decoration: none;
+                color: white;
+            }
+            a:hover{
+                color: $color-hover;
+            }
+        }
+    }
+    .listaNot2{
+        img{
+            margin-right: 0.5rem;
+            margin-bottom: 0.1rem;
+        }
+        li{
+            margin-right: 1rem;
+            span{
+                color: #b9b7c0;
+                font-weight: 600;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+#article{
+    h1{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    h1 span{
+    color: #757479;
+    }
+} 
+.comentarios{
+    list-style: none;
+    @include tablet{
+        padding-left: 0rem;
+    }
+    li{
+        padding-bottom: 3rem;
+    }
+}
+.contComent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .infoComent{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        img{
+            border-radius: 100%;
+            margin-right: 2rem;
+            object-fit: cover;
+        }
+        div{
+            display: block;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #757479;
+            margin-bottom: 0;
+        }
+        a{
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            color: $color-hover;
+        }
+    }
+    .textoComent{
+        padding-left: 5.5rem;
+        margin-top: 0.8rem;
+        /*<------MQ-------->*/
+        @include movil{
+            padding-left: 0rem;
+        }
+        /*<------MQ-------->*/
+        p{
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #a8a7ad;
+            white-space: normal;
+            word-spacing: 2px;
+            line-height: 1.5rem;
+            word-wrap: break-word;
+        }
+        a{
+            margin-right: 10px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+        .btn{
+            padding: 0;
+            color: white;
+            text-transform: uppercase;
+        }
+        .btn:hover{
+            color: $color-hover;
+        }
+    }
+}
+.formComent{
+    textarea{
+        background-color: #3a3747;
+        border: #3a3747;
+        color: white;
+        margin-top: 0.7rem;
+        width: 100%;
+        border-radius: 5px;
+        padding: .75rem 1.25rem;
+    }
+    textarea::placeholder{
+        color: rgb(128, 125, 125);
+        font-size: 1rem;
+    }
+    .btnComent{
+        padding: 0.7rem 0rem;
+        text-align: left;
+        button{
+            width: 7rem;
+            height: 2.7rem;
+            background-color: $color-hover;
+            color: white;
+            border-radius: 5px;
+            border: $color-hover;
+            transform: skew(-4deg);
+        }
+        .enviarComent{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        .enviarComent:hover{
+            background-color: #ffffff;
+            color: $color-hover;
+        }
+    }
+}
+/*NOTICIASIMPLE.HTML*/
+/*------------------------------------------------------------------------------------------------*/
