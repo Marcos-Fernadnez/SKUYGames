@@ -1090,6 +1090,75 @@ div#img3 {
 /*MEDIAQUERYS*/
 /*MEDIAQUERYS*/
 /*------------------------------------------------------------------------------------------------*/
+.carousel-item {
+  opacity: 0.5; }
+
+.tienda {
+  background-color: #15131f; }
+  .tienda__contenedor {
+    width: 100%;
+    padding: 100px 15px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 1200px) {
+      .tienda__contenedor {
+        max-width: 1150px; } }
+  .tienda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 2rem;
+    list-style: none; }
+    .tienda__lista--items {
+      background-color: #282535;
+      padding: 0.6rem 1.4rem;
+      margin: 0rem 0.2rem 0;
+      font-size: .75rem;
+      font-family: 'Noto Sans Display', sans-serif;
+      font-weight: 700;
+      letter-spacing: .07rem;
+      border-radius: 3px;
+      transform: skew(-4deg); }
+    .tienda__lista--items:hover {
+      background-color: white; }
+    .tienda__lista--activo {
+      background-color: #d31c3e; }
+    .tienda__lista--activo:hover {
+      background-color: #d31c3e; }
+    .tienda__lista--enlace {
+      text-decoration: none;
+      color: white; }
+    .tienda__lista--enlace:hover {
+      color: black; }
+    .tienda__lista--enlace-activo:hover {
+      color: white; }
+
+.producto__contenedor--imagen {
+  width: 100%;
+  height: 15rem;
+  border-radius: 3px;
+  transform: skew(-2deg) scaleX(1.028);
+  opacity: 0.5;
+  margin: 0 0.5rem; }
+
+.producto__contenedor--nombre {
+  font-family: 'Noto Sans Display', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  padding-top: 1rem; }
+
+.producto__contenedor--precio {
+  color: #aaa5a5;
+  font-weight: 700;
+  font-size: 0.9rem; }
+
+.producto__columna {
+  padding: 1rem; }
+
+/*------------------------------------------------------------------------------------------------*/
+/*MEDIAQUERYS*/
+/*MEDIAQUERYS*/
+/*------------------------------------------------------------------------------------------------*/
 .cuatrocientoscuatro {
   position: relative;
   display: inline-block;
