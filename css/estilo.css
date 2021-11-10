@@ -1141,6 +1141,9 @@ div#img3 {
   opacity: 0.5;
   margin: 0 0.5rem; }
 
+.producto__contenedor--imagen:hover {
+  opacity: 1; }
+
 .producto__contenedor--nombre {
   font-family: 'Noto Sans Display', sans-serif;
   font-weight: 500;
@@ -1151,6 +1154,13 @@ div#img3 {
   color: #aaa5a5;
   font-weight: 700;
   font-size: 0.9rem; }
+
+.producto__contenedor--enlace {
+  color: white;
+  text-decoration: none; }
+
+.producto__contenedor--enlace:hover {
+  color: #d31c3e; }
 
 .producto__columna {
   padding: 1rem; }
