@@ -1132,6 +1132,81 @@ div#img3 {
       color: black; }
     .tienda__lista--enlace-activo:hover {
       color: white; }
+  .tienda__buscador {
+    background: #3c3b42;
+    border: #282535;
+    border-radius: 5px;
+    transform: skew(-4deg);
+    padding: 6px 0;
+    width: 100%; }
+  .tienda__buscador::placeholder {
+    color: #aaa5a5;
+    font-size: 1rem;
+    padding-left: 15px; }
+  .tienda__buscador:focus {
+    background: #5a5963;
+    color: white;
+    font-size: 1rem;
+    padding-left: 15px; }
+  .tienda__form {
+    margin-bottom: 2.5rem; }
+    .tienda__form--ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 4rem; }
+    .tienda__form--lista {
+      font-family: 'Noto Sans Display', sans-serif;
+      letter-spacing: .10rem;
+      color: #aaa5a5;
+      padding-bottom: 0.7rem; }
+    .tienda__form--categoria {
+      color: white;
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 1.2rem; }
+    .tienda__form--enlace {
+      color: #aaa5a5;
+      text-decoration: none; }
+      .tienda__form--enlace:hover {
+        color: white; }
+  .tienda__populares--nombre {
+    color: white;
+    font-family: 'Noto Sans Display', sans-serif;
+    letter-spacing: .10rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 3rem; }
+  .tienda__productos {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Noto Sans Display', sans-serif; }
+    .tienda__productos--lista {
+      margin-top: 1.5rem;
+      margin-bottom: 2rem; }
+    .tienda__productos--enlace {
+      text-decoration: none;
+      color: #aaa5a5;
+      display: flex;
+      align-items: center;
+      text-align: left; }
+      .tienda__productos--enlace:hover {
+        color: #d31c3e; }
+    .tienda__productos--imagen {
+      object-fit: cover;
+      height: 5rem;
+      width: 5rem;
+      border-radius: 3px;
+      transform: skew(-3deg) scaleX(1.028);
+      opacity: 0.7; }
+      .tienda__productos--imagen:hover {
+        opacity: 1; }
+    .tienda__productos--desc {
+      margin-left: 1.5rem; }
+    .tienda__productos--parrafo {
+      margin-bottom: 0.5rem; }
+    .tienda__productos--precio {
+      font-size: 0.8rem;
+      font-weight: 700; }
 
 .producto__contenedor--imagen {
   width: 100%;

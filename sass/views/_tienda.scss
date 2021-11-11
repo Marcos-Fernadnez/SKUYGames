@@ -51,6 +51,102 @@
             color: white;
         }
     }
+    &__buscador{
+        background: #3c3b42;
+        border: #282535;
+        border-radius: 5px;
+        transform: skew(-4deg);
+        padding: 6px 0;
+        width: 100%;
+    }
+    &__buscador::placeholder{
+        color: $bg-texto;
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+    &__buscador:focus{
+        background: #5a5963;
+        color:white;
+        font-size: 1rem;
+        padding-left: 15px;
+    }
+    &__form{
+        margin-bottom: 2.5rem;
+        &--ul{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 4rem;
+        }
+        &--lista{
+            font-family: 'Noto Sans Display', sans-serif;
+            letter-spacing: .10rem;
+            color: $bg-texto;
+            padding-bottom: 0.7rem;
+        }
+        &--categoria{
+            color: white;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+        &--enlace{
+            color: $bg-texto;
+            text-decoration: none;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    &__populares{
+        &--nombre{
+            color: white;
+            font-family: 'Noto Sans Display', sans-serif;
+            letter-spacing: .10rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &__productos{
+        list-style: none;
+        padding-left: 0;
+        font-family: 'Noto Sans Display', sans-serif;
+        &--lista{
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        &--enlace{
+            text-decoration: none;
+            color: $bg-texto;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            &:hover{
+                color: $color-hover;
+            }
+        }
+        &--imagen{
+            object-fit: cover;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 3px;
+            transform: skew(-3deg) scaleX(1.028);
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        &--desc{
+            margin-left: 1.5rem;
+        }
+        &--parrafo{
+            margin-bottom: 0.5rem;
+        }
+        &--precio{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
 }
 
 .producto{

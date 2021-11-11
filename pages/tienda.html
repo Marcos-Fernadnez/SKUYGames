@@ -104,14 +104,53 @@
           <div class="row">
 <!---------------------------------------------------------------------------Columna Izquierda------------------------------------------------------>
               <div class="col-lg-3">
-                <form action="">
-                    <input type="text">
+                <form class="tienda__form">
+                    <input class="tienda__buscador" type="text" placeholder="Buscar...">
                 </form>
+                <ul class="tienda__form--ul">
+                  <li class="tienda__form--lista tienda__form--categoria">Categorías</li>
+                  <li class="tienda__form--lista"><a href="#" class="tienda__form--enlace">Todos</a></li>
+                  <li class="tienda__form--lista"><a href="#" class="tienda__form--enlace">Audio</a></li>
+                  <li class="tienda__form--lista"><a href="#" class="tienda__form--enlace">Mandos</a></li>
+                  <li class="tienda__form--lista"><a href="#" class="tienda__form--enlace">Teclados</a></li>
+                </ul>
+                <div class="tienda__populares">
+                  <p class="tienda__populares--nombre">Productos Populares</p>
+                  <ul class="tienda__productos">
+                    <li class="tienda__productos--lista">
+                      <a class="tienda__productos--enlace" href="#NintendoSwitch">
+                        <img class="tienda__productos--imagen" src="../img/tienda/NintendoSwitch2.jpg" alt="">
+                        <div class="tienda__productos--desc">
+                          <p class="tienda__productos--parrafo">Nintendo Switch</p>
+                          <p class="tienda__productos--parrafo tienda__productos--precio">US$596.00</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="tienda__productos--lista">
+                      <a class="tienda__productos--enlace" href="#RazerFireflyV2">
+                        <img class="tienda__productos--imagen" src="../img/tienda/razer-firefly-v2-gallery1-gaming-mouse-mat2.jpg" alt="">
+                        <div class="tienda__productos--desc">
+                          <p class="tienda__productos--parrafo">Razer Firefly V2</p>
+                          <p class="tienda__productos--parrafo tienda__productos--precio">US$70.00</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="tienda__productos--lista">
+                      <a class="tienda__productos--enlace" href="#ESG5Shock">
+                        <img class="tienda__productos--imagen" src="../img/tienda/Energy-Sistem-ESG-5-SHOCK-con-micro2.jpg" alt="">
+                        <div class="tienda__productos--desc">
+                          <p class="tienda__productos--parrafo">ESG 5 Shock</p>
+                          <p class="tienda__productos--parrafo tienda__productos--precio">US$57.00</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 <!---------------------------------------------------------------------------Columna Derecha------------------------------------------------------>
               <div class="col-lg-9">
                 <ul class="tienda__lista">
-                    <li class="tienda__lista--items tienda__lista--activo"><a class="tienda__lista--enlace tienda__lista--enlace-activo" href="#All">ALL</a></li>
+                    <li class="tienda__lista--items tienda__lista--activo"><a class="tienda__lista--enlace tienda__lista--enlace-activo" href="#All">TODOS</a></li>
                     <li class="tienda__lista--items"><a class="tienda__lista--enlace" href="#Audio">AUDIO</a></li>
                     <li class="tienda__lista--items"><a class="tienda__lista--enlace" href="#Mandos">MANDOS</a></li>
                     <li class="tienda__lista--items"><a class="tienda__lista--enlace" href="#Teclados">TECLADOS</a></li>
