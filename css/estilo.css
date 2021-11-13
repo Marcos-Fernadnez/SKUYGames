@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------------------------------------*/
 * {
   padding: 0;
@@ -97,21 +98,14 @@ footer {
     margin-bottom: 35px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /*&--icono{
-            position: absolute;
-        }*/ }
+    justify-content: center; }
     .redes .divRedes__logo--gmail {
-      /*background-image: url("../../img/csgo.jpg");*/
       position: absolute; }
     .redes .divRedes__logo--facebook {
-      /*background-image: url("../../img/csgo.jpg");*/
       position: absolute; }
     .redes .divRedes__logo--instagram {
-      /*background-image: url("../../img/csgo.jpg");*/
       position: absolute; }
     .redes .divRedes__logo--youtube {
-      /*background-image: url("../../img/csgo.jpg");*/
       position: absolute; }
     .redes .divRedes__logo--icono {
       padding-left: 0.7rem;
@@ -1100,6 +1094,7 @@ div#img3 {
   .carrousel-img {
     height: 40vh; } }
 
+/*---------------------Columna Derecha-------------*/
 .tienda {
   background-color: #15131f; }
   .tienda__contenedor {
@@ -1245,6 +1240,7 @@ div#img3 {
       font-size: 0.8rem;
       font-weight: 700; }
 
+/*--------------Columna Izquierda-------------------*/
 .producto__contenedor--imagen {
   width: 100%;
   height: 15rem;
@@ -1276,6 +1272,18 @@ div#img3 {
 
 .producto__columna {
   padding: 1rem; }
+
+/*------------------Paginación----------------*/
+.pagination .page-link {
+  color: white;
+  background-color: #15131f;
+  border: 0px;
+  font-weight: 600; }
+
+.pagination .page-item.active .page-link {
+  background-color: #d31c3e;
+  border-color: #d31c3e;
+  border-radius: 100%; }
 
 /*------------------------------------------------------------------------------------------------*/
 /*MEDIAQUERYS*/

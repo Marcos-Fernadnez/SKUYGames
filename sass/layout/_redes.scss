@@ -40,13 +40,9 @@
         justify-content: center;
         @each $redes in gmail, facebook, instagram, youtube {
             &--#{$redes} {
-                /*background-image: url("../../img/csgo.jpg");*/
                 position: absolute;
             }
         }
-        /*&--icono{
-            position: absolute;
-        }*/
         &--icono{
             padding-left: 0.7rem;
             padding-top: 0.7rem;

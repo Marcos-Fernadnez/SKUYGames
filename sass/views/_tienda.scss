@@ -8,6 +8,7 @@
         height: 40vh;
     }
 }
+/*---------------------Columna Derecha-------------*/
 .tienda{
     background-color: $bg-SNoticia;
     &__contenedor{
@@ -188,7 +189,7 @@
         }
     }
 }
-
+/*--------------Columna Izquierda-------------------*/
 .producto{
     &__contenedor{
 
@@ -224,5 +225,19 @@
     }
     &__columna{
         padding: 1rem;
+    }
+}
+/*------------------Paginación----------------*/
+.pagination{
+    .page-link{
+        color: white;
+        background-color: $bg-SNoticia;
+        border: 0px;
+        font-weight: 600;
+    }
+    .page-item.active .page-link{
+        background-color: $color-hover;
+        border-color: $color-hover;
+        border-radius: 100%;
     }
 }
