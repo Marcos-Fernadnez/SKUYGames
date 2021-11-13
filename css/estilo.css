@@ -1093,13 +1093,25 @@ div#img3 {
 .carousel-item {
   opacity: 0.5; }
 
+@media screen and (max-width: 576px) {
+  .carrousel-img {
+    height: 40vh; } }
+
 .tienda {
   background-color: #15131f; }
   .tienda__contenedor {
     width: 100%;
-    padding: 100px 15px;
+    padding: 100px;
+    padding-left: 1rem;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto; }
+    @media screen and (min-width: 768px) {
+      .tienda__contenedor {
+        max-width: 900px; } }
+    @media screen and (min-width: 992px) {
+      .tienda__contenedor {
+        max-width: 1000px; } }
     @media screen and (min-width: 1200px) {
       .tienda__contenedor {
         max-width: 1150px; } }
@@ -1119,6 +1131,9 @@ div#img3 {
       letter-spacing: .07rem;
       border-radius: 3px;
       transform: skew(-4deg); }
+      @media screen and (max-width: 576px) {
+        .tienda__lista--items {
+          margin-bottom: 0.5rem; } }
     .tienda__lista--items:hover {
       background-color: white; }
     .tienda__lista--activo {
@@ -1182,7 +1197,26 @@ div#img3 {
     font-family: 'Noto Sans Display', sans-serif; }
     .tienda__productos--lista {
       margin-top: 1.5rem;
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      display: inline-block; }
+      @media screen and (max-width: 576px) {
+        .tienda__productos--lista {
+          display: block; } }
+      @media screen and (min-width: 576px) {
+        .tienda__productos--lista {
+          margin-right: 1rem; } }
+      @media screen and (min-width: 768px) {
+        .tienda__productos--lista {
+          margin-right: 3rem; } }
+      @media screen and (min-width: 992px) {
+        .tienda__productos--lista {
+          margin-right: 0rem; } }
+    @media screen and (min-width: 576px) {
+      .tienda__productos--ultimo {
+        margin-right: 0rem; } }
+    @media screen and (min-width: 768px) {
+      .tienda__productos--ultimo {
+        margin-right: 0rem; } }
     .tienda__productos--enlace {
       text-decoration: none;
       color: #aaa5a5;

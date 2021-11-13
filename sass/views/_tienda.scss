@@ -3,13 +3,29 @@
 .carousel-item{
     opacity: 0.5;
 }
+.carrousel-img{
+    @include movil{
+        height: 40vh;
+    }
+}
 .tienda{
     background-color: $bg-SNoticia;
     &__contenedor{
         width: 100%;
-        padding: 100px 15px;
+        padding: 100px;
+        padding-left: 1rem;
+        padding-right: 25px;
         margin-left: auto;
         margin-right: auto;
+        @include movil-tablet{
+            
+        }
+        @include tablet-desktop{
+            max-width: 900px;
+        }
+        @include desktop{
+            max-width: 1000px;
+        }
         @include desktop-xl{
             max-width: 1150px;
         }
@@ -30,6 +46,9 @@
             letter-spacing: .07rem;
             border-radius: 3px;
             transform: skew(-4deg);
+            @include movil{
+                margin-bottom: 0.5rem;
+            }
         }
         &--items:hover{
             background-color: white;
@@ -114,6 +133,27 @@
         &--lista{
             margin-top: 1.5rem;
             margin-bottom: 2rem;
+            display: inline-block;
+            @include movil{
+            display: block;    
+            }
+            @include movil-tablet{
+                margin-right: 1rem;
+            }
+            @include tablet-desktop{
+                margin-right: 3rem;
+            }
+            @include desktop{
+                margin-right: 0rem;
+            }
+        }
+        &--ultimo{
+            @include movil-tablet{
+                margin-right: 0rem;
+            }
+            @include tablet-desktop{
+                margin-right: 0rem;
+            }
         }
         &--enlace{
             text-decoration: none;
