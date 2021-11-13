@@ -126,6 +126,9 @@ footer {
       font-size: 0.8rem;
       font-weight: 600;
       text-align: center; }
+    .redes .divRedes__logo--enlace {
+      text-decoration: none;
+      color: white; }
   .redesRow__divRedes img {
     width: 34px;
     height: 34px; }
@@ -191,7 +194,7 @@ footer {
     /*<------MQ-------->*/ }
     @media screen and (max-width: 576px) {
       .section__portada--img {
-        height: auto; } }
+        height: 40vh; } }
 
 /*PORTADAS*/
 /*------------------------------------------------------------------------------------------------*/

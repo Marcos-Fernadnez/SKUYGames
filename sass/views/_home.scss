@@ -8,7 +8,7 @@
             height: 100%;
             /*<------MQ-------->*/
             @include movil{
-                height: auto;
+                height: 40vh;
             }
             /*<------MQ-------->*/
         }
