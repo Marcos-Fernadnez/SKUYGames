@@ -228,14 +228,14 @@
     }
 }
 /*------------------Paginación----------------*/
-.pagination{
-    .page-link{
+.paginado{
+    .paginado__enlace{
         color: white;
         background-color: $bg-SNoticia;
         border: 0px;
         font-weight: 600;
     }
-    .page-item.active .page-link{
+    .page-item.active .paginado__enlace{
         background-color: $color-hover;
         border-color: $color-hover;
         border-radius: 100%;

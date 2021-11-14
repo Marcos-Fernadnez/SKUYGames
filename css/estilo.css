@@ -1274,13 +1274,13 @@ div#img3 {
   padding: 1rem; }
 
 /*------------------Paginación----------------*/
-.pagination .page-link {
+.paginado .paginado__enlace {
   color: white;
   background-color: #15131f;
   border: 0px;
   font-weight: 600; }
 
-.pagination .page-item.active .page-link {
+.paginado .page-item.active .paginado__enlace {
   background-color: #d31c3e;
   border-color: #d31c3e;
   border-radius: 100%; }
